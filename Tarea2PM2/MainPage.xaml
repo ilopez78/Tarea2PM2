@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea2PM2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#FF9900" 
+               Padding="24" 
+               CornerRadius="0">
+
+            <Label Text="Tarea 2" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="36"/>
+        </Frame>
+
+
+        <Label Text="Nombres:" Padding="20"/>
+        <Entry x:Name="nom" Keyboard="Text"/>
+
+        <Label Text="Apellidos:" Padding="20"/>
+        <Entry x:Name="ape" Keyboard="Text"/>
+
+        <Label Text="Edad:" Padding="20"/>
+        <Entry x:Name="edad" Keyboard="Numeric"/>
+
+        <Label Text="Correo Electrónico:" Padding="20"/>
+        <Entry x:Name="mail" Keyboard="Email"/>
+
+        <Button Text="ENVIAR INFORMACIÓN" 
+                x:Name="btnEnviar"
+                WidthRequest="200"
+                Clicked="btnEnviar_Clicked"
+                HorizontalOptions="Center" 
+                BackgroundColor="#FF9900" 
+                TextColor="White"
+                CornerRadius="20"
+                Margin="10"/>
+
+
+    </StackLayout>
+
+</ContentPage>
